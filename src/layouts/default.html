@@ -3,17 +3,46 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
+
+	<meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, target-densityDpi=device-dpi" />
+
+    <title>Calvin College</title>
+
+    <meta name="description" content="Calvin College" />
+    <meta name="keywords" content="">
+    
+    <link rel="shortcut icon" href="//calvin.edu/favicon.ico"> 
+    <link rel="apple-touch-icon" href="//www.calvin.edu/images/icons/apple-touch-icon.png">
+
+	<!-- "Gotham SSm A", "Gotham SSm B" | "Gotham Cond SSm A", "Gotham Cond SSm B" -->
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6279574/782228/css/fonts.css" />
+
+    <!-- Icon fonts -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Owl Carousel + JS dependant -->
+    <link href="/admin/luker/redesign5/stylesheets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <!-- Addition plug-ins and scripts place inside /js/app.js and called before the closing BODY tag -->
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
+
   <body>
+    
+	<div class="off-canvas-wrap" data-offcanvas>
+	<div class="inner-wrap">
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+    	{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    	
+    	{{> header}}
+    		{{> body}}
+    	{{> footer}}
 
+	</div><!-- /.inner-wrap -->
+	</div><!-- /.off-canvas-wrap -->
+   
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

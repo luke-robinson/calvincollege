@@ -1,0 +1,172 @@
+/* Typography variables */
+$body-font-color: #111;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family-condensed: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "Helvetica Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* CALLS TO ACTION */
+.cta {
+	margin-bottom: 0;
+	padding: 0;
+	background-color: transparent;
+}
+.cta ul {
+	margin: 0;
+	padding: 0 16px 0 0;
+}
+.cta-actions li {
+ background: $alert-color;
+	text-align: center;
+	padding: 0;
+	margin: 0 2px 0 0;
+	float: right;
+	-webkit-transform: skewX(-25deg); /* Skew the boxes */
+	-moz-transform: skewX(-25deg);
+	-ms-transform: skewX(-25deg);
+	-o-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.cta-actions li:nth-child(2) {
+ background: $success-color;
+}
+.cta-actions li:nth-child(3) {
+ background: $link;
+}
+.cta-actions li:hover {
+ background: $black;
+}
+.cta-action a {
+	display: block;
+	height: auto;
+	padding: .25em 1em;
+	margin: 0;
+	color: white;
+	font-family: $body-font-family-condensed;
+	font-weight: 600;
+	letter-spacing: .024em;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transform: skewX(25deg); /* Cancel out the previous skew in .cta-actions li */
+	-moz-transform: skewX(25deg);
+	-ms-transform: skewX(25deg);
+	-o-transform: skewX(25deg);
+	transform: skewX(25deg);
+}
+
+/* SIGHTS & SOUNDS */
+.sights-n-sounds {
+	overflow: hidden;
+	background: #666666;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+.sights-n-sounds #result {
+	width: 100%;
+	text-align: center;
+}
+.sights-n-sounds h5 {
+	display: block;
+	width: 100%;
+	margin: 0 .5em;
+	background: transparent;
+	line-height: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.sights-n-sounds a:hover h5, .sights-n-sounds a:hover {
+	background: $black;
+	color: $gold;
+	display: block;
+}
+.sights-n-sounds .drawer-handle b::before {
+	content: '\002B \0020'; /* Plus Space (ASCII encoded) */
+}
+.sights-n-sounds .drawer-handle.active b::before {
+	content: '\00D7 \0020'; /* Multiply Space (ASCII encoded) */
+}
+.sights-n-sounds span:after {
+	color: $aluminum;
+	content: " #calvincollege";
+	padding-left: .5em;
+	text-transform: lowercase;
+}
+.sights-n-sounds .drawer-panel {
+	display: none;
+	background-color: $gainsboro; /* #ddd */
+	padding-top: 1.5em;
+	-webkit-box-shadow: inset 0 14px 14px -7px rgba(0,0,0,.5);
+	   -moz-box-shadow: inset 0 14px 14px -7px rgba(0,0,0,.5);
+	        box-shadow: inset 0 14px 14px -7px rgba(0,0,0,.5);
+}
+
+/* FOOTER */	
+#footer {
+	background-color: $gray;
+	margin: 0;
+	padding: 0;
+	color: $white;
+	font-weight: normal;
+}
+#footer .gutter {
+	padding: 1.5em 0 3em 0;
+}
+#footer a {
+	text-decoration: none;
+	color: $white;
+	&:link {
+		color: $white;
+	}
+	 &:hover {
+		color: lighten($link, 25%);
+		text-decoration: underline;
+	}
+}
+.footer-address {
+	padding: 0;
+}
+.socialnetwork {
+	font-size: 2em;
+	line-height: 1.25;
+	font-weight: normal;
+}
+.socialnetwork-channel a:hover {
+	text-decoration: none;
+}
+.vcard {
+	border: none;
+	padding: 0;
+}
+#footer img:hover {
+	opacity: 0.6;
+}
+@media only screen and (max-width: $medium-screen) { /* Target 0 to 768px */
+	.network {
+	margin-top: .5em;
+	}
+}
+
+/* BACK TO TOP */
+.go-top {
+	position: fixed;
+	bottom: 0.9375rem;
+	right: 0.9375rem;
+	height: 44px;
+	width: 44px;
+	text-decoration: none;
+	color: white;
+	background-color: $black;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 22px;
+	padding: 5px 16px;
+	margin: 0;
+	display: none;
+	border-radius: 3px;
+	z-index: 9999;
+}
+.go-top:hover {
+ 	color: $gold;
+	background-color: rgba(0, 0, 0, 0.5);
+}

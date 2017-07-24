@@ -1,0 +1,34 @@
+
+.lst-news {
+	list-style-type: none;
+	margin-left: 0;
+}
+.lst-news li {
+	display: table-row;
+	height: 3em;
+}
+.lst-news a {
+	display: table-cell;
+	height: 3em;
+	width: 720px;
+	vertical-align: middle;
+	border-bottom: 1px solid #ccc;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	color: black;
+}
+.lst-news li:last-child a {
+	border-bottom: none;
+}
+.lst-news a strong {
+	color: $link;
+	text-decoration: underline;
+}
+.lst-news a:hover {
+	background-color: #f2f2f2;
+}
+.lst-news img {
+	width: 100%;
+	margin-bottom: 1em;
+}

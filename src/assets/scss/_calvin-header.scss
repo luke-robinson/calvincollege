@@ -1,0 +1,202 @@
+/* Typography variables */
+$body-font-color: #111;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family-condensed: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "Helvetica Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+#header {
+	background-color: $white;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 50; /* Prevent the header from overlapping the dropdown menus in the global nav */
+	}
+#header a {
+	text-decoration: none;
+	}
+
+/* Global tools (i.e. Me, Visit, Apply, Give, A-Z, etc. */
+#global-tools {
+	background-color: $jet;
+	height: 2rem;
+	}
+#global-tools a {
+	color: $white;
+	line-height: 2rem;
+	&:hover {
+		color: $gold;
+		}
+	}
+.actions {
+	margin-bottom: 0;	
+	}
+	
+/* Search box */
+.search {
+	position: relative;
+	overflow: hidden;
+	margin-top: 1rem;
+	}
+	.off-canvas-list .search {
+	margin: 0 0.66667rem;
+	border-bottom: 1px solid #1A1A1A;
+	}
+.search input[type="text"] {
+    background: none repeat scroll 0% 0% $gainsboro;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    height: 29px;
+    min-height: 29px;
+    line-height: 19px;
+    margin: 10px 0 0 0;
+	}
+.search input[type="text"]:hover {
+    background: none repeat scroll 0% 0% $smoke;
+	}
+.search input[type="text"]:focus{
+	background: $smoke;
+	-webkit-box-shadow: none;
+	box-shadow: none; 
+	}
+/* Search box button and icon */
+.search input[type="submit"] { 
+	margin: 0; 
+	padding: 0;
+	position: absolute;
+	right: 0;
+	background: none; 
+	border: none; 
+	width: 30px;
+    height: 30px;
+	cursor: pointer;
+	}
+.search-icon {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    cursor: pointer;
+	}
+.search-icon .fi-magnifying-glass {
+	color: $steel;
+	font-size: 22px;
+	}
+
+	
+/* COLLEGE IDENTITY + TOGGLE MENU BUTTONS */
+
+	.identity {
+	background-color: $white;
+	color: $gray;
+	margin-top: 0;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	}
+	.identity a { 
+		 color: $gray;
+		}
+		.identity a:hover {
+		color: $black;
+		}
+	.calvin { /* Calvin nameplate */
+	margin: 1.5rem auto 1.5rem auto;
+	font-weight: bold;
+	}
+	.svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%; /* Fix IE11 */
+		max-width: 100%;
+		height: auto;
+		}
+
+
+/* MOBILE HEADER ONLY */
+		
+.tab-bar .calvin { /* Calvin logo on small screens */
+	margin: 0;
+	width: 170px;
+	height: auto;
+	float: left;
+	}
+.tab-bar .menu-icon span { /* Hamburger icon for small screens */
+	top: 1rem;
+	}
+.tab-bar .menu-icon:hover span:after { 
+	box-shadow: 0 0 0 1px #f3cd00, 0 7px 0 1px #f3cd00, 0 14px 0 1px #f3cd00;
+	}
+.move-left .tab-bar .menu-icon  { /* Spin the hamburger icon */
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	transform:rotate(90deg);
+	transition:transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition:-moz-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-o-transition:-o-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+/* GLOBAL NAVIGATION */
+	.global {
+	background-color: $maroon;
+	width: 100%;
+	overflow: hidden;
+	z-index: -1;
+	}
+	.global ul li {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	}
+	#header .global a {
+	position: relative;
+	color: $white;
+	font-family: $body-font-family-condensed;
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: condensed;
+	text-transform: uppercase;
+	line-height: 50px;
+	letter-spacing: 1px;
+	margin: 0;
+	display: block;
+	white-space: nowrap;
+	&:hover {
+		color: $gold;
+		}
+	}
+
+/* DROP-DOWN MENUS */
+.f-dropdown {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-clip: padding-box; /* Useful in preventing bg color from leaking outside the border */
+	position: absolute; /* Correct the rendering issue between the #footer and closing body tag */
+	top: 0;
+	z-index: 200;
+	}
+.f-dropdown a { /* Dropdown menu panels, HTML resides outside the #header at the end of the document */
+	text-decoration: none;
+	}
+
+/* ====================================================== MEDIUM SCREEN ====================================================== */
+@media only screen and (min-width: $medium-screen) {
+	
+	#header .search {
+	margin-top: 2rem;
+	}
+}
+
+/* ====================================================== LARGE SCREEN ====================================================== */
+@media only screen and (min-width: $large-screen) {
+	#header .global a {
+	font-size: 1.25em;
+	}
+	#header .search {
+	margin-top: 2.25rem;
+	}
+}
+
+/* ====================================================== RETINA ====================================================== */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+}

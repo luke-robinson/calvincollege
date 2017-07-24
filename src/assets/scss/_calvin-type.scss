@@ -1,0 +1,233 @@
+/* Typography variables */
+$body-font-color: #111;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family-condensed: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "Helvetica Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Calvin typography and anchors
+
+::selection { background: #98002e; color: $white; } /* Highlight selected text in Safari */
+::-moz-selection { background: #98002e; color: $white; } /* Highlight selected text in Firefox */
+
+a {
+	color: $link;
+	line-height: inherit;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	-moz-transition: color .25s;
+	-o-transition: color .25s;
+	-webkit-transition: color .25s;
+	transition: color .25s;
+	text-decoration: underline;
+	}
+a:focus {
+	text-decoration: underline !important;
+	outline: 1px dotted #333;
+	}
+.reveal-modal a {
+	text-decoration: none;
+	}
+a.close-reveal-modal, a.close { 
+	text-decoration: none;
+	}
+.f-dropdown a:hover {
+	color: #fff;
+	}
+	.f-dropdown li:hover, .f-dropdown li:focus { 
+		-moz-transition: background-color .25s ease-in;
+		-webkit-transition: background-color .25s ease-in; 
+		transition: background-color .25s ease-in;
+		}
+a:hover > .panel { /* Clickable panels */
+	border: 1px solid $link; 
+	outline: 2px solid $link;
+	background: #f8f8f8;
+	}
+a.external::after { /* External icon */
+	content: '';
+	padding-left: 16px;
+	background: url('//www.calvin.edu/images/icons/linkout.gif') center right no-repeat transparent;
+	}
+a.pdf::after { /* PDF icon */
+	content: '';
+	padding-left: 20px;
+    background: url('//www.calvin.edu/images/icons/pdf.png') center right no-repeat transparent;
+	}
+a.doc::after, a.docx::after { /* Word icon */
+	content: '';
+	padding-left: 20px;
+    background: url('//www.calvin.edu/images/icons/doc.gif') center right no-repeat transparent;
+	}
+a.xls::after, a.xlsx::after, a.csv::after { /* Excel icon */
+	content: '';
+	padding-left: 20px;
+    background: url('//www.calvin.edu/images/icons/excel.png') center right no-repeat transparent;
+	}
+a.ppt::after, a.pptx::after { /* Powerpoint icon */
+	content: '';
+	padding-left: 20px;
+    background: url('//www.calvin.edu/images/icons/ppt.gif') center right no-repeat transparent;
+	}
+a.office::after { /* MS Office icon */
+	content: '';
+	padding-left: 20px;
+    background: url('//www.calvin.edu/images/icons/office.png') center right no-repeat transparent;
+	}
+
+
+		
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin-top: 1.6rem;
+	margin-bottom: .2rem;
+	letter-spacing: .024em;
+	font-stretch: condensed;
+	}
+h1 {
+	text-transform: uppercase;
+	font-weight: 600;
+	}
+h2, h3, h4, h5 {
+	color: $maroon;
+	}
+h5, h6 {
+	text-transform: uppercase;
+	font-weight: 600;
+	}
+.subheader, .lead {
+	color: #6f6f6f;
+	}
+
+p.subheader, p.lead {
+	font-size: 1.25em;
+	line-height: 1.74;
+	margin-bottom: rem-calc(25);
+	}
+.xxlarge-text { 
+	font-size: 5.25em;
+	}
+.xlarge-text {
+	font-size: 3.25em;
+	}
+.large-text {
+	font-size: 2.25em;
+	}
+.medium-text {
+	font-size: 1.25em;
+	}
+.small-text {
+	font-size: .75em;
+	}
+
+ul {
+	margin-left: 2em;
+	}
+ol {
+	margin-left: 2em;
+	}
+li.correct {
+	list-style-image: url("//calvin.edu/global/images/icons/accept.png");
+	}
+li.incorrect {
+	list-style-image: url("//calvin.edu/global/images/icons/exclamation.png");
+	}
+ul.ruled {
+    margin-top: 1rem;
+    border-top: 1px solid $secondary-color;
+  }
+	ul.ruled > li {
+		padding: .5rem;
+		border-bottom: 1px solid $secondary-color;
+		}
+
+/* List that's split 50/50 */
+.lst-split {
+	margin-left: 0;
+	}
+.lst-split li {
+	overflow: hidden; 
+	height: auto;
+	width: 100%;
+	}
+.lst-split li > b { /* Left column */
+	float: left;
+	width: 45%;
+	height: auto;
+	font-weight: normal;
+	}
+.lst-split li > i { /* Right column */
+	text-align: right;
+	float: right;
+	width: 45%;
+	height: auto;
+	font-style: normal;
+	}
+
+/* Unordered list of links */
+.lst-nav { 
+	list-style-type: none; 
+	margin-left: 0; 
+	width: 100%; 
+	border-top: 1px solid #ccc; 
+	}
+.lst-nav li { 
+	width: 100%; 
+	overflow: hidden; 
+	height: auto;
+	}
+.lst-nav .no-bullet {
+	color: $body-font-color;
+	}
+.lst-nav a {
+	display: block; 
+	text-decoration: none; 
+	width: 100%; 
+	border-bottom: 1px solid #ccc; 
+	padding: 1em; 
+	}
+.lst-nav a:hover { 
+	background-color: #f2f2f2;
+	text-decoration: underline;
+	}
+.lst-nav h4, .lst-nav h5, lst-nav h6 {
+	margin: 0;
+	color: #0093A8;
+	}
+.lst-nav a:hover h4, .lst-nav a:hover h5, .lst-nav a:hover h6 {
+	text-decoration: underline;
+	color: darken($link, 3%);
+	}
+.lst-nav img { 
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+ /* Extended styles for .lst-nav within .tabs-content */
+	.tabs-content .lst-nav { 
+		border-top: none; 
+		}
+ 	.tabs-content.lst-nav a {
+		padding: 0;
+		border: none;
+		}
+	.tabs-content.lst-nav a:hover { 
+		background-color: transparent;
+		}
+	.tabs-content.lst-nav img { 
+		padding: 0 0 1em 0;
+		}
+ 
+.button, .button.expand, button, button.expand { /* Default button style */
+	text-transform: uppercase;
+	border: 1px solid darken($primary-color, 3%);
+	font-weight: 500; /* medium */
+	font-size: 1.25rem;
+	letter-spacing: .05rem;
+	}
+
+cite {
+	font-style: normal;
+	color: $gray;
+	font-size: 1em;
+	}

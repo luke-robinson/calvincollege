@@ -1,0 +1,138 @@
+
+/* Responsive Calendar Theme */
+
+/*** EVENTS ***/
+
+.events .prev-next {
+	text-align: center;
+	padding: 15px;
+}
+.ongoing-events {
+	padding: 1em 1em 1.5em;
+	margin: 1em 0; 
+	border: 1px solid #ddd;
+}
+.ongoing-events ul {
+	margin-bottom: 0;
+}
+.events .day .date {
+	position: absolute;
+	padding: 18px 0px 0px;
+	left: 20px;
+	top: 0;
+}
+.events .day .date .month {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 77%;
+	background: #660000;
+	text-align: center;
+	width: 43px;
+}
+.events .day .date .day-number {
+	color: #5d5d60;
+	font-weight: 700;
+	font-size: 230%;
+	text-align: center;
+	width: 43px;
+	height: 31px;
+	padding-top: 8px;
+}
+.events .day {
+	border-bottom: 1px dotted #cccccc;
+	position: relative;
+}
+.events .day.last {
+	border-bottom: none;
+}
+.events .day ul {
+	margin: 10px 10px 20px 0;
+	list-style: none;
+}
+.events .day ul li {
+	margin: 0;
+	list-style-type: none;
+}
+.events .day ul li p.small {
+	font-size: 85%;
+	color: #5d5d60;
+	margin-bottom: 0;
+}
+.events .day ul li h3 {
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+.calendar table {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.calendar table th {
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	color: #222;
+	padding: 0;
+	font-size: 80%;
+	padding: 5px;
+}
+.calendar table th a {
+	color: #fff;
+	text-decoration: none;
+}
+.calendar table th.prev a, .calendar table th.next a {
+	display: block;
+	height: 18px;
+	font-size: 18px;
+	padding: 0;
+	top: 0;
+	text-decoration: none;
+	width: 23px;
+}
+.calendar table th a:hover { 
+	color: #ffcc33; 
+	}
+.calendar table th.next a {
+	float: right;
+}
+.calendar table td {
+	border: none;
+	padding: 0;
+}
+.calendar table td a {
+	display: block;
+	background: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px;
+	margin: 1px;
+}
+.calendar table td.navSelectedDay a {
+	background: #ddd;
+}
+.calendar table td a:hover {
+	background: #eee;
+}
+.calendar table th.date-picker-title, .calendar table th.prev, .calendar table th.next {
+	background: #660000;
+	text-transform: none;
+}
+.todaysEvents { 
+	margin-top: 1em;
+}
+#related-events {
+	border-top: 1px dotted #cccccc;
+	padding-top: 15px;
+	margin-top: 5em;
+}
+#related-events img {
+	display: none;
+}
+p.no-results {
+	border-top: 1px dotted #CCC;
+	padding-top: 18px;
+}
+

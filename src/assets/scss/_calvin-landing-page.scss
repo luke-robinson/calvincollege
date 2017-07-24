@@ -1,0 +1,56 @@
+
+/* LANDING PAGE WITH BANNER IMAGE */
+
+.landing-bg {
+	margin: 0 0 1.5em 0;
+	padding: 1em 0;
+	width: 100%;
+	background: url('//calvin.edu/home/images/bg-spring-season-2016.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+.landing .banner {
+	background: rgba(0,0,0,.5);
+	padding: 1em;
+	}
+.landing .th {
+	display: none; /*Hide the photo by default */
+	}
+.landing h1 {
+	color: $white;
+	font-size: 1em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	text-indent: -9999px; /* Hide text */
+	font-size: 0;
+	}
+.landing h1:after { /* Show text graphic */
+	display: block;
+	width: 300px;
+	max-width: 300px;
+	height: 300px;
+	margin: .5em auto;
+	text-align: center;
+	content: " ";
+	background: url("//calvin.edu/contentAsset/raw-data/669935df-e240-4b94-b592-590c502344b6/headlineImage/83687605-7112-44fb-b222-40d4eb1aa544.png") center top no-repeat;
+	}
+.landing h1 span {
+	display: block; 
+	font-size: 1.4em;
+	line-height: 1;
+	}
+.landing .orbit-bullets li {
+	width: 16px;
+	height: 16px;
+	}
+
+@media only screen and (min-width: $medium-screen) {
+	
+	.landing .th { /* Show the photo */
+	display: block;
+	border: 10px solid white;
+	}
+
+}

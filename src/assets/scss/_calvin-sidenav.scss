@@ -1,0 +1,154 @@
+/* Typography variables */
+$body-font-color: #111;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family-condensed: "Gotham Cond SSm A", "Gotham Cond SSm B", "Helvetica Neue Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "Helvetica Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$small-screen: 640px;
+$medium-screen: 768px;
+$large-screen: 960px;
+
+#sideNav {
+	display: none; /* Hide the sidebar navigation */
+	}
+	
+.expanded {
+	display: block !important;
+	}
+
+/* First List */
+#sideNav {
+	margin: 0; /* Set flush */
+	background-color: $smoke;
+	border: solid 1px $gainsboro;
+	}
+#sideNav ul { 
+	margin: 0;
+	padding: 0;
+	}
+#sideNav li {
+	list-style-type: none;
+	border-top: 1px solid $white;
+	border-bottom: 1px solid $gainsboro;
+	}
+	#sideNav ul li:first-child {
+	border-top: 0;
+	}
+	#sideNav ul li:last-child {
+	border-bottom: 0;
+	}
+#sideNav ul li a {
+	display: block;
+	padding: .5em 14px;
+	margin: 0;
+	text-decoration: none;
+	font-family: $body-font-family-condensed;
+	font-size: 1.25em;
+	font-stretch: condensed;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	font-weight: 400;
+	}
+#sideNav ul li a {
+	color: $oil;
+	&:hover {
+		color: #c2002f;
+		}
+	}
+/* Second nested list */
+#sideNav ul ul {
+	text-transform: none;
+	}
+/* Third nested list */
+#sideNav ul li ul li ul {
+	margin: 0; 
+	padding: 0 0 0 1em;
+	}
+/* First list: YOU ARE HERE */
+#sideNav ul li.active {
+	background: $maroon;
+	}
+#sideNav ul li.active > a:hover {
+	background: #c2002f;
+	}
+#sideNav ul li.active > a {
+	color: $white;
+	font-weight: 500;
+	}
+/* Second nested list: Override */
+#sideNav ul li ul li, #sideNav ul li ul li a {
+	border: none;
+	background-color: $white !important;
+	font-family: $body-font-family;
+	font-stretch: normal;
+	text-transform: none;
+	font-size: 1em;
+	}
+/* Second nested list: YOU ARE HERE */
+#sideNav ul li ul li.active > a {
+	color: $maroon;
+	font-weight: 500;
+	}
+/* Third nested list: Override */
+	#sideNav ul li ul li ul li {
+	border: none;
+	font-family: inherit;
+	} 
+
+
+/* Toggle menu to Show/Hide local navigation on small screens */
+.sidebar-menu {  
+	display: inline-block;
+	width: 100%;
+	background: $smoke;
+	border: 1px solid $iron;
+	padding: 1em;
+	margin-bottom: -1px;
+	text-indent: 1em;
+	line-height: 20px;
+		
+		.bars { /* spin the menu: by etchapps.com */
+		display: inline-block;
+		width: 30px;
+		float: left;
+		}
+		.active .bars {
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		transform:rotate(90deg);
+		}
+		.icon-bar {
+		display: block;
+		width: 100%;
+		height: 4px;
+		text-align: center;
+		background-color: $link;
+		}
+		.icon-bar + .icon-bar {
+		margin-top: 5px;
+		}
+}
+
+.bars { /* spin the menu: by etchapps.com */
+	display: block;
+	}
+.active .bars {
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	transform:rotate(90deg);
+	}
+/* Smooth the animation ~by etchapps.com */
+.bars { 
+	display: block;
+	transition:transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition:-moz-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-webkit-transition:-webkit-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-o-transition:-o-transform 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+
+@media only screen and (min-width: $small-screen) { 
+#sideNav {
+	display: block !important; /* Show side navigation bar */
+	}
+}
+

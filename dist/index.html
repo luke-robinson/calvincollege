@@ -2,169 +2,848 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
+
+	<meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, target-densityDpi=device-dpi" />
+
+    <title>Calvin College</title>
+
+    <meta name="description" content="Calvin College" />
+    <meta name="keywords" content="">
+    
+    <link rel="shortcut icon" href="//calvin.edu/favicon.ico"> 
+    <link rel="apple-touch-icon" href="//www.calvin.edu/images/icons/apple-touch-icon.png">
+
+	<!-- "Gotham SSm A", "Gotham SSm B" | "Gotham Cond SSm A", "Gotham Cond SSm B" -->
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6279574/782228/css/fonts.css" />
+
+    <!-- Icon fonts -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Owl Carousel + JS dependant -->
+    <link href="/admin/luker/redesign5/stylesheets/owl.carousel.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <!-- Addition plug-ins and scripts place inside /js/app.js and called before the closing BODY tag -->
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
+
   <body>
+    
+	<div class="off-canvas-wrap" data-offcanvas>
+	<div class="inner-wrap">
 
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation for Sites</h1>
-        </div>
-      </div> 
-    
-      <div class="grid-x grid-margin-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowledge.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>        
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="grid-x grid-margin-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-    
-          <div class="grid-x grid-margin-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve column section in a grid-x with grid-margin-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-margin-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-margin-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-          
-          <hr />
-                  
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x grid-margin-x collapse">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input class="input-group-field" type="text" placeholder="input-group" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
-        </div>     
-    
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="small button">Simple Button</a><br/>          
-          <a href="#" class="medium success button">Success Btn</a><br/>
-          <a href="#" class="medium alert button">Alert Btn</a><br/>
-          <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-          </div>
-        </div>
-      </div>
-    </div>
-    
+    	
+    	
+    	<!-- HEADER -->
+    	<header id="header">
+    	
+    	<!-- MOBILE -->
+    	
+    	<!-- BEGIN Banner Message for Mobile -->
+    	<!-- SSI -->
+    	<!-- END Banner Message for Mobile -->
+    	 
+    	  <nav class="tab-bar show-for-small">
+    	
+    	    <section class="left tab-bar-section">
+    	
+    	      <div class="calvin">
+    	
+    	          <a href="/" title="Go to Calvin's homepage">
+    	
+    	            <img src="//www.calvin.edu/global/images/calvin-college-inverse.svg" alt="Calvin College" width="170" height="47" />
+    	
+    	          </a>
+    	
+    	      </div>
+    	
+    	    </section>
+    	
+    	    
+    	
+    	    <section class="right-small">
+    	
+    	    	<a href="#" class="right-off-canvas-toggle menu-icon" title="Menu"><span></span></a>
+    	
+    	    </section>
+    	
+    	  </nav>
+    	
+    	
+    	
+    	<!-- BEGIN OFF-CANVAS MENU -->
+    	
+    	<aside class="right-off-canvas-menu">
+    	
+    	      <ul class="off-canvas-list">
+    	
+    	      	<li>
+    	      	  <label>Search</label></li>
+    	        <li class="search">
+    	
+    	        <!-- SEARCH -->
+    	        <form method="get" action="http://search.calvin.edu/search" id="GoogleSearch">
+    	        <input type="text" name="q" id="queryBox" maxlength="255" value="Search" class="search-input" spellcheck="false" autocomplete="off" onfocus="if(this.value=='Search'){this.value=''};" onblur="if(this.value==''){this.value='Search'};" />
+    	        <span class="search-icon">
+    	        <input type="submit" name="btnG" value="" title="Go" class="search-submit" /><i class="fi-magnifying-glass"></i>
+    	        </span>
+    	        <input type="hidden" name="site" value="calvin" />
+    	        <input type="hidden" name="client" value="calvin" />
+    	        <input type="hidden" name="proxystylesheet" value="calvin" />
+    	        <input type="hidden" name="output" value="xml_no_dtd" />
+    	        <input name="sort" value="date:D:L:d1" type="hidden" />
+    	</form>
+    	</li>
+    	
+    	        <li><a href="/dept/" title="A-Z Index"><i class="fi-list"></i> A-Z</a></li>
+    	        <li><a href="/people/" title="People"><i class="fi-address-book"></i> People</a></li>
+    	        <li><a href="/calendar/" title="Calendar"><i class="fi-calendar"></i> Calendar</a></li>
+    	        <li><a href="/map/" title="Maps"><i class="fi-marker"></i> Maps</a></li>
+    	        <li><label>Calvin College</label></li>
+    	        <li><a href="/about/">About</a></li>
+    	        <li><a href="/academics/">Academics</a></li>
+    	        <li><a href="/admissions/">Admissions &amp; Aid</a></li>
+    	        <li><a href="/student-life/">Student Life</a></li>
+    	        <li><a href="/arts/">Arts</a></li>
+    	        <li><a href="http://www.calvinknights.com/" title="CalvinKnights.com">Athletics</a></li>
+    	        <li><label>Browse</label></li>
+    	        <li><a href="http://www.calvin.edu/parents/"><i class="fi-torsos"></i> Students</a></li>
+    	        <li><a href="http://www.calvin.edu/parents/"><i class="fi-torsos"></i> Parents</a></li>
+    	        <li><a href="http://www.calvin.edu/alumni/"><i class="fi-torsos"></i> Alumni</a></li>
+    	        <li><a href="http://www.calvin.edu/resource/faculty.htm"><i class="fi-torsos"></i> Faculty &amp; Staff</a></li>
+    	        <li><a href="http://www.calvin.edu/admissions/admits/"><i class="fi-torsos"></i> Admitted Students</a></li>
+    	        <li><label>Shortcuts</label></li>
+    	        <li><a href="http://www.calvin.edu/go/studentmail" title="Password protected">StudentMail</a></li>
+    	        <li><a href="http://www.calvin.edu/go/webmail" title="Password protected">Outlook</a></li>
+    	        <li><a href="http://moodle.calvin.edu/" title="Password protected">Moodle</a></li>
+    	        <li><a href="http://portal.calvin.edu/" title="Password protected">Portal</a></li>
+    	        <li><a href="http://www.calvin.edu/visit/">Visit</a></li>
+    	        <li><a href="http://www.calvin.edu/apply/">Apply</a></li>
+    	        <li><a href="http://www.calvin.edu/support/">Give</a></li>
+    	      </ul>
+    	    </aside>
+    	
+    	
+    	
+    	<!-- TABLET & DESKTOP MENU -->
+    	
+    	
+    	
+    	    <!-- BEGIN Banner Message for Tablet & Mobile -->
+    	
+    	        <div class="hide-for-small">
+    	
+    	            <!-- SSI -->
+    	
+    	        </div>
+    	
+    	    <!-- END Banner Message for Tablet & Mobile -->
+    	
+    	
+    	
+    	<div class="hide-for-small">
+    	
+    	
+    	
+    	<!-- 1. AUDIENCE & TOOLS -->
+    	
+    	<div id="global-tools">
+    	
+    	    <div class="row">
+    	
+    	        <div class="columns medium-6">
+    	
+    	            <ul class="actions inline-list small-text">
+    	                <li><a href="#" title="Short-cuts" data-dropdown="signin-more" data-options="is_hover:true; align:right"><i class="fi-torso"></i> <span>Me</span></a></li>
+    	                <li><a href="/visit/" title="Visit Campus">Visit</a></li>
+    	                <li><a href="/apply/" title="Apply to Calvin">Apply</a></li>
+    	                <li><a href="/support/" title="Support Calvin">Give</a></li>
+    	            </ul>
+    	
+    	        </div>
+    	
+    	        <div class="columns medium-6">
+    	
+    	            <ul class="actions inline-list right small-text">
+    	                <li><a href="/a-z/" title="A-Z Index">A-Z</a></li>
+    	                <li><a href="/people/" title="People">People</a></li>
+    	                <li><a href="/calendar/" title="Calendar">Calendar</a></li>
+    	                <li><a href="/map/" title="Maps">Maps</a></li>
+    	            </ul>
+    	
+    	        </div>
+    	
+    	    </div>
+    	
+    	</div>
+    	
+    	
+    	
+    	<!-- 2. NAMEPLATE -->
+    	
+    		<div class="row identity">
+    	
+    	    <div class="columns medium-4">
+    	
+    			<span style="font-size: 0;">&nbsp;</span><!-- spacing fix -->
+    	
+    	    </div>
+    	
+    	    <div class="columns medium-4 small-12"> 
+    	
+    	      <!-- CALVIN -->
+    	
+    	      <!-- <div class="calvin"><a href="/" title="Go to Calvin's homepage"><img src="//www.calvin.edu/admin/luker/redesign5/images/calvin-college-1876.png" alt="Calvin College" /></a></div> -->
+    	
+    		  <div class="calvin">
+    	
+    	          <object type="image/svg+xml" data="//www.calvin.edu/admin/luker/redesign5/images/calvin-college.svg" height="84" width="303" class="svg">
+    	
+    	          <a href="http://www.calvin.edu/" title="Go to Calivn's homepage"><img src="//www.calvin.edu/admin/luker/redesign5/images/calvin-college.svg" width="303" height="84" alt="Calvin College" /></a>
+    	
+    	          </object>
+    	
+    	      </div>
+    	
+    	    </div>
+    	
+    	    <div class="columns medium-1">
+    	
+    	    	<span style="font-size: 0;">&nbsp;</span><!-- spacing fix -->
+    	
+    	    </div>
+    	
+    	    <div class="columns medium-3">
+    	
+    	          <div class="search">
+    	
+    	            <!-- SEARCH -->
+    	
+    	<form method="get" action="http://search.calvin.edu/search" id="GoogleSearch">
+    	        <input type="text" name="q" id="query" maxlength="255" value="Search" class="search-input" spellcheck="false" autocomplete="off" onfocus="if(this.value=='Search'){this.value=''};" onblur="if(this.value==''){this.value='Search'};" />
+    	        <span class="search-icon">
+    	        <input type="submit" name="btnG" value="" title="Go" class="search-submit" /><i class="fi-magnifying-glass"></i>
+    	        </span>
+    	        <input type="hidden" name="site" value="calvin" />
+    	        <input type="hidden" name="client" value="calvin" />
+    	        <input type="hidden" name="proxystylesheet" value="calvin" />
+    	        <input type="hidden" name="output" value="xml_no_dtd" />
+    	        <input name="sort" value="date:D:L:d1" type="hidden" />
+    	
+    	</form>
+    	
+    	
+    	
+    	          </div>
+    	
+    	    </div>
+    	
+    	    </div><!-- /.row -->
+    	
+    	  </div><!-- /.identity --> 
+    	
+    	
+    	
+    	<!-- 3. GLOBAL NAV --> 
+    	<div id="global-navigation">
+    		<nav role="navigation" class="global hide-for-small" id="navigation">
+    				<div class="row">
+    	
+    					<ul class="small-block-grid-6">
+    						<li><a href="/about/" data-dropdown="drop1">About</a></li>
+    						<li><a href="/academics/" data-dropdown="drop2">Academics</a></li>
+    						<li><a href="/admissions/" data-dropdown="drop3">Admissions &amp; Aid</a></li>
+    						<li><a href="/student-life/" data-dropdown="drop4">Student Life</a></li>
+    						<li><a href="/arts/" data-dropdown="drop5">Arts</a></li>
+    						<li><a href="http://www.calvinknights.com/" data-dropdown="drop6">Athletics</a></li>
+    					</ul>
+    				</div>
+    		</nav>
+    	</div>
+    	
+    	</header>
+    	
+    	<!-- BEGIN CONTENTS -->
+    	<div class="contents">    
+    		<div class="row intro">
+    	
+    			<!-- Breadcrumbs for larger devices only -->
+    			<section class="hide-for-small">
+    			  <div class="small-12 columns">
+    				<div id="crumb">
+    					<ul>
+    						<li><a href="/">Home</a></li>
+    						<li><a href="#">Academics</a></li>
+    						<li><a href="#">Chinese</a></li>
+    						<li><a href="#">Dynasties</a></li>
+    						<li><a href="#">Yuan</a></li>
+    						<li><a href="#">Ming</a></li>
+    						<li><a href="#">Qing</a></li>
+    					</ul>
+    				</div>
+    			  </div>
+    			</section>
+    	
+    			<section class="small-12 columns">
+    				<h1 id="page-title" class="h1">Structures</h1>
+    			</section>
+    	
+    		</div><!--/.intro -->
+    	
+    	<div class="row primary">
+    	<div class="large-12 columns">
+    	
+    	
+    	
+    	            <!-- BEGIN MAIN CONTENT -->
+    	
+    	
+    	
+    	<section role="main" class="row">
+    	
+    	
+    	
+    	<!-- BEGIN ASIDE: SIDE-NAV --> 
+    	
+    	<aside class="medium-3 medium-push-9 small-12 columns">
+    	
+    	
+    	
+    	<!-- TOOGLE -->
+    	
+    	<a href="#" class="sidebar-menu show-for-small" title="Menu" onclick="toggleNav(); return false;" ><span class="bars"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span> Menu</a>
+    	
+    	
+    	
+    	    <nav id="sideNav" role="navigation">
+    	
+    	        <ul>
+    	
+    	          <li><a href="/academics/">Academics</a></li>
+    	
+    	          <li><a href="/academics/majors-minors/">Majors &amp; Programs</a></li>
+    	
+    	          <li><a href="/academics/departments/">Departments</a></li>
+    	
+    	          <li class="active latest"><a href="/academics/faculty/">Faculty</a>
+    	
+    	            <ul>
+    	
+    	              <li class="active latest"><a href="/academics/faculty/ctln/">Calvin Teaching &amp; Learning Network</a>
+    	
+    	                <ul>
+    	
+    	                  <li><a href="http://www.fonts.com/font/monotype/century-gothic" class="external" title="fonts.com">Century Gothic</a></li>
+    	
+    	                  <li><a href="http://www.fonts.com/font/monotype/monotype-century-schoolbook" class="external" title="fonts.com">Century Schoolbook</a></li>
+    	
+    	                  <li><a href="http://www.fonts.com/font/microsoft-corporation/constantia" class="external" title="fonts.com">Constantia</a></li>
+    	
+    	                  <li><a href="http://www.typography.com/fonts/gotham/webfonts/" class="external" title="typography.com">Gotham</a></li>
+    	
+    	                </ul>
+    	
+    	              </li>
+    	
+    	            </ul>
+    	
+    	          </li>
+    	
+    	          <li><a href="/academics/opportunities/">Learning Opportunities</a></li>
+    	
+    	          <li><a href="/academics/global/">Global Connections</a></li>
+    	
+    	          <li><a href="/academics/student-services/">Student Services</a></li>
+    	
+    	          <li><a href="/academics/reputation/">Academic Reputation</a></li>
+    	
+    	          <li><a href="/academics/centers-institutes/">Centers &amp; Institutes</a></li>
+    	
+    	          <li><a href="http://library.calvin.edu/">Hekman Library</a></li>
+    	
+    	        </ul>
+    	
+    	    </nav>
+    	
+    	    
+    	
+    	    <div class="hide-for-small" style="margin-top: 1em;">
+    	
+    	        <ul class="small-block-grid-3">
+    	
+    	            <li><a href="#" title="Facebook"><i class="fi-social-facebook xlarge-text"></i></a></li>
+    	
+    	            <li><a href="#" title="Twitter"><i class="fi-social-twitter xlarge-text"></i></a></li>
+    	
+    	            <li>
+    	
+    	            <a href="#" title="Blog">
+    	
+    	                <i class="xlarge-text">
+    	
+    	                	<!-- <img src="/global/images/icons/blog.svg" alt="BLOG"> -->
+    	
+    	                	<svg id="icon-blog" data-name="icon-blog" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.96 159.14"><defs><style>.cls-1{fill:#fff;stroke:#231f20;stroke-miterlimit:10;}.cls-2{fill:#0093a9;transition: .25s ease-out;}.icon:hover .cls-2{fill:#007e90;transition: .25s ease-out;}</style></defs><title>blog-icon</title><path class="cls-1" d="M5.04 5.13h150v119.79h-150z"/><g class="icon"><path class="cls-2" d="M32.47 67.71H31.4v18.11h.91c5.79 0 9.76-3.14 9.76-8.76v-.41c-.01-5.72-3.81-8.94-9.6-8.94zM41.4 51.59v-.17c0-5.62-3.47-8.43-8.76-8.43H31.4V60.6h.91c5.7 0 9.09-3.27 9.09-9.01zM91.31 42.17c-3.89 0-6.61 5.54-6.61 21v2.48c0 15.46 2.73 21 6.61 21s6.61-5.54 6.61-21v-2.48c-.04-15.47-2.72-21-6.61-21z"/><path class="cls-2" d="M157.7 0H4.27A4.27 4.27 0 0 0 .01 4.26v122.53a4.27 4.27 0 0 0 4.26 4.26h25v23.81a4.26 4.26 0 0 0 7.28 3l26.82-26.82h94.3a4.27 4.27 0 0 0 4.26-4.26V4.26A4.27 4.27 0 0 0 157.7 0zM50.24 77.63c0 10-7.69 15.71-18.76 15.71h-8.1V35.47h8.27c5.62 0 10.75 1.49 14 4.71a13.38 13.38 0 0 1 3.89 9.92v.33c0 7.77-4.46 11.49-9.09 13.31 5.54 2 9.84 5.79 9.84 13.31v.58zm25 15.71h-20V35.47h8.18v50.18h11.86v7.68zm30.92-27.7c0 19.1-6.12 28.44-14.88 28.44S76.4 84.74 76.4 65.64v-2.48c0-19.1 6.12-28.44 14.88-28.44s14.88 9.34 14.88 28.44v2.48zm32.39 26.13a21.62 21.62 0 0 1-9.67 2.31c-9.92 0-18.1-8.68-18.1-28.77v-1.82c0-19 8-28.77 18.76-28.77a15.8 15.8 0 0 1 7.52 1.74v8.51a13.84 13.84 0 0 0-7.27-2.4c-6.2 0-10.75 6.61-10.75 20.58v2.48c0 15.87 5 20.92 10.17 20.92a8 8 0 0 0 1.9-.25V68.79h-6.12v-7.27h13.56v30.26z"/></g></svg>
+    	
+    	                </i>
+    	
+    	            </a>
+    	
+    	            </li>
+    	
+    	        </ul>
+    	
+    	    </div>
+    	
+    	    
+    	
+    	</aside>
+    	
+    	 
+    	
+    	<!-- END ASIDE: SIDE-NAV --> 
+    	
+    	
+    	
+    	<!-- BEGIN MAIN ARTICLE -->
+    	
+    	<article class="medium-9 medium-pull-3 small-12 columns">
+    		<!-- BEGIN MAIN SECTION -->
+    		<h2 class="show-for-sr">Main content</h2>
+    		<section class="medium-9 medium-pull-3 small-12 columns">
+    		<h1>Welcome</h1>
+    		</section>
+    		<!-- END MAIN SECTION -->
+    	<!-- END MAIN ARTICLE & SECTION -->
+    	</article>
+    	</section>
+    	
+    	            </div><!--/.large-12 columns -->
+    	          </div><!-- /.primary row -->
+    	
+    	</div><!-- /.contents -->
+    	<!-- END CONTENTS -->
+    	
+    	
+    	<!-- FOOTER -->
+    	
+    	<aside class="cta">
+    		<div class="row">
+    			<div class="columns small-12">
+    				<ul class="inline-list cta-actions">
+    					<li class="cta-action"><a href="http://www.calvin.edu/apply/" title="Apply to Calvin">Apply</a></li>
+    					<li class="cta-action"><a href="http://www.calvin.edu/visit/" title="Visit Campus">Visit</a></li>
+    					<li class="cta-action"><a href="http://www.calvin.edu/start/" title="Request Information">Info</a></li>aa
+    				</ul>
+    			</div>
+    		</div>
+    	</aside>
+    	
+    	
+    	<aside class="sights-n-sounds">
+    	
+    	    <a href="http://social.calvin.edu/" class="drawer-handle" id="load-result" onclick="_gaq.push(['_trackEvent', 'Footer', 'Toggle', 'RebelMouse']);">
+    	        <div id="drawer" class="row">
+    	            <h5 class="columns small-12 text-center"><b class="medium-text"></b>Sights &amp; Sounds<span></span></h5>
+    	        </div>
+    	    </a>
+    	    <figure class="drawer-panel">
+    	      <!-- For testing, AJAX loads the iFrame contents into #results from uranium.calvin.edu/test/sights-n-sounds.html - Otherwise, load the iFrame from www.calvin.edu/social/media.html -->
+    	
+    	    <div id="result"></div>
+    	
+    	    </figure>
+    	
+    	</aside>
+    	
+    	
+    	
+    	
+    	
+    	<footer id="footer">
+    	
+    	    <div class="row gutter">
+    	
+    	        <div class="footer-address large-7 medium-8 small-12 columns">
+    	
+    	                <div class="large-3 medium-3 hide-for-small columns">
+    	
+    	                    <img src="//www.calvin.edu/images/nameplate-calvin-seal-footer.gif" alt="My Heart I Offer To You Lord, Promptly and Sincerely" id="the-seal" title="My Heart I Offer To You Lord, Promptly and Sincerely" />
+    	
+    	                </div>
+    	
+    	                
+    	
+    	                <div class="large-9 medium-9 small-12 columns">
+    	
+    	                    <ul class="vcard">
+    	
+    	                        <li class="fn"><a href="/">Calvin College</a></li>
+    	
+    	                        <li class="street-address">3201 Burton SE, <span class="locality">Grand Rapids,</span> <span class="state">Michigan</span>, <span class="zip">49546</span></li>
+    	
+    	                        <li><span class="tel"><a href="tel:616-526-6000">(616) 526-6000</a></span> | <a href="tel:1-800-688-0122">1-800-688-0122</a> | <span class="email"><a href="mailto:info@calvin.edu">info@calvin.edu</a></span></li>
+    	
+    	                    </ul>
+    	
+    	                    <p><a href="http://www.calvin.edu/hr/">Jobs</a>&nbsp;|&nbsp;<a href="http://www.calvin.edu/legal/copyright">&copy; 2013 Calvin College</a></p>
+    	
+    	                </div>
+    	
+    	        </div><!-- /.large-7 -->
+    	
+    	        
+    	
+    	        <div class="large-5 medium-5 small-12 columns">
+    	
+    	                <ul class="socialnetwork inline-list">
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://www.facebook.com/calvincollege" class="facebook has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Join us on Facebook" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Facebook']);"><i class="fi-social-facebook"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://twitter.com/calvincollege" class="twitter has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Follow @CalvinCollege on Twitter" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Twitter']);"><i class="fi-social-twitter"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://www.linkedin.com/groups?gid=1449847" class="linkedin has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Join us on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'LinkedIn']);"><i class="fi-social-linkedin"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://www.vimeo.com/calvincollege" class="vimeo has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Watch us on Vimeo" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Vimeo']);"><i class="fi-social-vimeo"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://www.youtube.com/CalvinCollege" class="youtube has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Watch us on YouTube" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Youtube']);"><i class="fi-social-youtube"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://pinterest.com/calvincollege/" class="pinterest has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Pin with us on Pinterest" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Pinterest']);"><i class="fi-social-pinterest"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="http://instagram.com/calvincollege/" class="instagram has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="See us on Instagram" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Instagram']);"><i class="fi-social-instagram"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="#" title="Send your snaps to @calvinknights" class="has-tip tip-top" data-tooltip data-options="disable-for-touch:true"><i class="fi-social-snapchat"></i></a></li>
+    	
+    	                        <li class="socialnetwork-channel"><a href="//www.calvin.edu/social/" class="has-tip tip-top" data-tooltip data-options="disable-for-touch:true" title="Browse all"  onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'SocialDirectory']);"><i class="fi-arrow-right"></i></a></li>
+    	
+    	                  </ul>
+    	
+    	        </div><!-- /.columns -->
+    	
+    	    </div><!-- /.row -->
+    	
+    	</footer>
+    	
+    	
+    	
+    	<!-- Back to top -->
+    	
+    	<a href="#header" class="go-top" title="Back to top"><i class="fi-arrow-up"></i></a>
+    	
+    	
+    	
+    	<!-- END Off-Canvas -->
+    	
+    	<a class="exit-off-canvas"></a>
+    	
+    	</div><!-- /.inner-wrap -->
+    	
+    	</div><!-- /.off-canvas-wrap -->
+    	
+    	
+    	
+    	<!-- GLOBAL DROP-DOWN MENUS -->
+    	
+    	<!-- Sign in-->
+    	
+    	<ul id="signin-more" class="f-dropdown" data-dropdown-content>
+    	
+    		<li><a href="http://www.calvin.edu/parents/"><i class="fi-torsos"></i> Students</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/parents/"><i class="fi-torsos"></i> Parents</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/alumni/"><i class="fi-torsos"></i> Alumni</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/resource/faculty.htm"><i class="fi-torsos"></i> Faculty &amp; Staff</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/admissions/admits/"><i class="fi-torsos"></i> Admitted Students</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/go/studentmail" title="Password protected">StudentMail</a></li>
+    	
+    	    <li><a href="http://www.calvin.edu/go/webmail"  title="Password protected">Outlook</a></li>
+    	
+    	    <li><a href="http://moodle.calvin.edu/"  title="Password protected">Moodle</a></li>
+    	
+    	    <li><a href="http://portal.calvin.edu/"  title="Password protected">Portal</a></li>
+    	
+    	</ul>
+    	
+    	
+    	
+    	<!-- Search-->
+    	
+    	<ul id="search-more" class="f-dropdown" data-dropdown-content>
+    	
+    	    <li><a href="/dept/" title="A-Z Index"><i class="fi-list"></i> A-Z</a></li>
+    	
+    	    <li><a href="/people/" title="People"><i class="fi-address-book"></i> People</a></li>
+    	
+    	    <li><a href="/calendar/" title="Calendar"><i class="fi-calendar"></i> Calendar</a></li>
+    	
+    	    <li><a href="/map/" title="Maps"><i class="fi-marker"></i> Maps</a></li>
+    	
+    	</ul>
+    	
+    	
+    	
+    	<!-- One: About -->
+    	
+    	<ul id="drop1" data-dropdown-content class="f-dropdown">
+    	
+    		  <li><a href="/about/">Overview</a></li>
+    	
+    	      <li><a href="/about/identity.html">Our Identity</a></li>
+    	
+    	      <li><a href="/about/mission.html">Our Mission</a></li>
+    	
+    	      <li><a href="/about/shalom.html">Our Calling</a></li>
+    	
+    	      <li><a href="/about/history.html">History</a></li>
+    	
+    	      <li><a href="/about/john-calvin/">John Calvin</a></li>
+    	
+    	      <li><a href="/about/the-seal.html">The Calvin Seal</a></li>
+    	
+    	      <li><a href="/about/administration/">Administration</a></li>
+    	
+    	      <li><a href="/about/contact.html">Contact Us</a></li>
+    	
+    	      <li><a href="http://www.crcna.org/">Church&nbsp;&raquo;</a></li>
+    	
+    	</ul>
+    	
+    	
+    	
+    	<!-- Two: Academics -->
+    	
+    	    <ul id="drop2" data-dropdown-content class="f-dropdown">
+    	
+    	      <li><a href="/academics/">Overview</a></li>
+    	
+    	      <li><a href="/academics/majors-minors/">Majors &amp; Programs</a></li>
+    	
+    	      <li><a href="/academics/departments/">Departments</a></li>
+    	
+    	      <li><a href="/academics/faculty/">Faculty</a></li>
+    	
+    	      <li><a href="/academics/opportunities/">Learning Opportunities</a></li>
+    	
+    	      <li><a href="/academics/global/">Global Connections</a></li>
+    	
+    	      <li><a href="/academics/student-services/">Student Services</a></li>
+    	
+    	      <li><a href="/academics/reputation/">Academic Reputation</a></li>
+    	
+    	      <li><a href="/academics/centers-institutes/">Centers &amp; Institutes</a></li>
+    	
+    	      <li><a href="http://library.calvin.edu/">Hekman Library&nbsp;&raquo;</a></li>
+    	
+    	    </ul>
+    	
+    	
+    	
+    	<!-- Three: Admissions & Aid -->
+    	
+    		<ul id="drop3" data-dropdown-content class="f-dropdown">
+    	
+    	      <li><a href="/admissions/">Overview</a></li>
+    	
+    	      <li><a href="http://www.calvin.edu/cgi-bin/std_form.pl?f=admissions">Request Information</a></li>
+    	
+    	      <li><a href="/admissions/visit/">Visit</a></li>
+    	
+    	      <li><a href="/admissions/apply/">Apply</a></li>
+    	
+    	      <li><a href="/finaid/">Financial Aid</a></li>
+    	
+    	      <li><a href="/admissions/transfers/">Transfers</a></li>
+    	
+    	      <li><a href="/admissions/intl/">Internationals</a></li>
+    	
+    	      <li><a href="/admissions/admits/">Admitted Students</a></li>
+    	
+    	      <li><a href="/admissions/profile.html">Quick Facts</a></li>
+    	
+    	      <li><a href="/admissions/contact-us.html">Contact Us</a></li>
+    	
+    	      <li><a href="/verge/">VERGE Magazine&nbsp;&raquo;</a></li>
+    	
+    	    </ul>
+    	
+    	  
+    	
+    	<!-- Four: Student Life -->
+    	
+    	    <ul id="drop4" data-dropdown-content class="f-dropdown">
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/">Overview</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/faith-worship/"> Faith &amp; Worship</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/residence-life/">Residence Life</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/dining/">Dining</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/opportunities/">Student Opportunities</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/health-safety/">Health &amp; Safety</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/service-learning/">Service-Learning</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/multicultural-international/">Multicultural &amp; International Students</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/careers-outcomes/">Careers &amp; Outcomes</a></li>
+    	
+    	      <li><a href="http://upbeat.calvin.edu/student-life/grand-rapids/">Life in Grand Rapids, MI</a></li>
+    	
+    	    </ul>
+    	
+    	  
+    	
+    	<!-- Five: Arts -->
+    	
+    	    <ul id="drop5" data-dropdown-content class="f-dropdown">
+    	
+    	      <li><a href="/arts/">Overview</a></li>
+    	
+    	      <li><a href="/arts/">Venues</a></li>
+    	
+    	      <li><a href="/arts/">Exhibits</a></li>
+    	
+    	      <li><a href="/arts/">Performances</a></li>
+    	
+    	      <li><a href="/arts/">Why Liberal Arts?</a></li>
+    	
+    	      <li><a href="/arts/">Tickets</a></li>
+    	
+    	    </ul>
+    	
+    	
+    	
+    	<!-- Six: Athletics -->
+    	
+    	    <ul id="drop6" data-dropdown-content class="f-dropdown">
+    	
+    	      <li><a href="http://www.calvinknights.com/">CalvinKnights.com</a></li>
+    	
+    	    </ul>
+    	
+    	
+    	
+    	
+    	
+    	<!-- FOUNDATION JAVASCRIPT -->
+    	
+    	
+    	
+    	<!-- jQuery -->
+    	
+    	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    	
+    	
+    	
+    	<script src="/admin/luker/redesign5/bower_components/foundation/js/foundation.min.js"></script>
+    	
+    	
+    	
+    	<!-- Calvin customization and scripts -->
+    	
+    	<script src="/admin/luker/redesign5/js/app.js"></script>
+    	
+    	
+    	
+    	<!-- jQuery Giving Banner Ad Cookie Script -->
+    	
+    	<script type="text/javascript" src="//www.calvin.edu/global/js/banner/banner.js"></script>
+    	
+    	
+    	
+    	<!-- jQuery UI Date & Time Picker -->
+    	
+    	<script src="//www.calvin.edu/global/js/jquery/datepicker/jquery-ui-1.10.3.custom.min.js"></script> 
+    	
+    	<script src="//www.calvin.edu/global/js/jquery/datepicker/jquery-ui-timepicker-addon.js"></script> 
+    	
+    	
+    	
+    	<!-- jQuery UI .datepicker -->
+    	
+    	<script>  
+    	
+    	(function() {  
+    	
+    		var elemdate = document.createElement('input');  //Create a new input field
+    	
+    	    elemdate.setAttribute('type', 'date'); //Set it as a date type
+    	
+    	    if ( elemdate.type == 'text' ) {  //Does the browser change it back to a text type?
+    	
+    	    	$('.datepicker').datepicker(); //If so, run non-HTML5 option on all .datepicker inputs
+    	
+    		}
+    	
+    	})();
+    	
+    	</script>
+    	
+    	
+    	
+    	<!-- tablesort by tristen >>> CRASHING IE10 IN EMULATION MODE
+    	
+    	<script src="//www.calvin.edu/global/js/tablesort/tablesort.min.js"></script>
+    	
+    	<script type="text/javascript">
+    	
+    	  new Tablesort(document.getElementById('sort'));
+    	
+    	</script>
+    	
+    	-->
+    	
+    	
+    	
+    	<!-- Owl Carousel 2.0.0beta2.4 -->
+    	
+    	<!-- PRODUCTION --> <script type="text/javascript" src="//www.calvin.edu/global/js/jquery/carousel/owl.carousel.min.js"></script>
+    	
+    	<!-- <script type="text/javascript" src="//www.calvin.edu/admin/luker/redesign5/js/owl.carousel.js"></script> -->
+    	
+    	 <script type="text/javascript">
+    	
+    	   $(window).load(function(){ // Prevent Owl's stage height from collapsing: GitHub #251
+    	
+    	     $('.owl-carousel').owlCarousel({
+    	
+    		   // autoplay:true,
+    	
+    	       // autoplayHoverPause:true,
+    	
+    	       items:1,
+    	
+    	       margin:1,
+    	
+    	       loop:true,
+    	
+    	       autoHeight:true, //Set autoHeight to false for cover pages to fix the bug in Safari
+    	
+    	       video:true,
+    	
+    	       nav:true,
+    	
+    		   lazyLoad: true,
+    	
+    	       navText:['&#8249;','&#8250;']
+    	
+    	     });
+    	
+    	   });
+    	
+    	</script>
 
+	</div><!-- /.inner-wrap -->
+	</div><!-- /.off-canvas-wrap -->
+   
     <script src="assets/js/app.js"></script>
   </body>
 </html>

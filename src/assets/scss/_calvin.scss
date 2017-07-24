@@ -1,0 +1,682 @@
+/*  ===================================== THE CALVIN COLLEGE HOUSE OF STYLE ========================================== */
+
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+$maroon: #97252b;
+$gold: #f3cd00;
+$gray: #333333; // (now called $oil)
+$red: #c200cf; // Reform Red
+$blue: #71b1c8; // Renew Blue
+$green: #a2d683; // True Green
+$link: #0093a8; // Blue hyperlinks
+
+$link-hover: lighten($link, 14%);
+$bg-body: #fff;
+$primary-color: $blue;
+$secondary-color: #eee; /* Very light gray */
+$alert-color: $gold; /* Gold */
+$success-color: $green; 
+
+// $primary-color: #97252b !default;
+// $secondary-color: #eee !default;
+
+/* Media Queries */
+/* Foundation has three primary breakpoints: */
+/* Small: Browser windows 0 - 639 pixels wide */
+/* Medium: Browser windows 640 - 768 pixels wide */
+/* Large: Browser windows 960 pixels and up */
+
+$small-screen: 639px;
+$medium-screen: 768px;
+$large-screen: 960px;
+
+body {
+	background-color: $white;
+}
+table {
+	width: 100%;
+}
+
+/* ============================================ TYPOGRAPHY ============================================ */
+
+@import "calvin-type";
+
+/* Helpers */
+.center { /* Absolute centering in CSS: http://codepen.io/shshaw/full/gEiDt */
+	width: auto;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+figure {
+	margin: 0;
+}
+img.right, figure.right {
+	margin: 0 0 1em 1em;
+	clear: right;
+}
+img.left, figure.left {
+	margin: 0 1em 1em 0;
+	clear: left;
+}
+img.expand, figure.expand {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+.image-center {
+	display: block;
+	margin: auto;
+}
+
+/* ====================================================== HEADER ==================================================== */
+@import "calvin-header";
+
+/* ====================================================== SIDE-NAV ================================================== */
+@import "calvin-sidenav";
+
+/* ====================================================== CONTENTS ================================================== */
+
+.has-tip, .has-tip:hover { /* Tool-tip borders */
+	border: none;
+}
+.contents {
+	padding: 0;
+	margin: 0 0 4em 0;
+}
+.intro {
+	margin-top: 1.5em;
+	padding: 0;
+}
+.primary aside:first-child {
+	margin: 0 0 1.5em 0;
+}
+#crumb {
+	background-color: transparent;
+	overflow: hidden;
+}
+#crumb ul {
+	margin: 0;
+}
+#crumb li {
+	display: inline;
+}
+#crumb li a {
+	 color: $link;
+		text-decoration: none;
+	 &:hover {
+	 color: $link-hover;
+	}
+}
+#crumb li:before {
+	content: "/";
+	color: #aaaaaa;
+	margin: 0 0.75em;
+	position: relative;
+	top: 1px;
+}
+#crumb li:first-child:before {
+	content: " ";
+	margin: 0;
+}
+
+
+/* Content Dividers */
+.contents .divider {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	margin: 0;
+	white-space: nowrap;
+}
+.contents .divider:before {
+	content: "";
+ 	border-bottom: 2px dotted $green;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.contents .divider {
+	 h1, h2, h3, h4, h5, h6, p, span {
+	 @extend .center; /* extend the .center rule */
+	 color: $green;
+	 display: inline-block;
+	 text-transform: uppercase;
+	 line-height: 1.5;
+	 background-color: $white;
+	 padding: 0 .5em;
+	}
+}
+.contents .divider.bottom {
+	padding-top: 0;
+}
+.contents .divider.left {
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	left: 0;
+ 	border-left: 2px dotted $green;
+	overflow: hidden;
+}
+
+
+/* ============================= FOUNDATION 5.5.3 CONTENT, CUSTOM STRUCTURES, PULLS AND WIDGETS ============================= */
+
+/* REVEAL MODAL BOXES */
+.close-reveal-modal {
+	z-index: 100;
+	}
+
+/* ACCORDIONS */
+.accordion {
+	border-bottom: 1px solid #ccc;
+	margin: 1.5em 0;
+}
+.accordion dd > a, .accordion-navigation > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-bottom: none;
+}
+.accordion dd > a:after, .accordion-navigation > a:after { /* Down arrow */
+	float: right;
+	margin-top: .5em;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #999999 transparent transparent transparent;
+}
+.accordion dd.active > a, .accordion-navigation.active > a {
+	color: #111;
+}
+.accordion dd.active > a:after, .accordion-navigation.active > a:after { /* Up arrow */
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 6px 6px 6px;
+	border-color: transparent transparent #999999;
+}
+/*
+.accordion .content.active {
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+*/
+
+/* TABS */
+.tabs {
+	border-left: 1px solid #ccc;
+	z-index: 2;
+}
+.tabs dd, .tab-title {
+	width: 100%;
+}
+.tabs dd > a, .tabs li > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	white-space: nowrap;
+}
+.tabs dd.active a, .tabs .tab-title.active a {
+	border-bottom: 1px solid #fff !important;
+	color: #222;
+}
+.tabs-content {
+ 	background-color: $white;
+	border: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 1.5em;
+	margin-top: -1px;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+	.tabs dd, .tab-title {
+		width: auto;
+	}
+	.tabs li > a {
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+
+/* TOGGLES with jQuery */
+.toggle-switch {
+	text-decoration: none;
+	display: inline-block;
+}
+.toggle-trigger {
+	cursor: pointer;
+}
+.toggle-trigger:hover, .toggle-trigger:focus {
+	color: #007e90;
+}
+.toggle-trigger.icon::before {
+	content: '\002B \0020'; /* Plus Space (ASCII encoded) */
+}
+.toggle-trigger.open.icon::before {
+	content: '\00D7 \0020'; /* Multiply Space (ASCII encoded) */
+}
+.toggle-trigger.text::before {
+	content: '\002B \0020 Show more'; /* Plus Space Show more */
+}
+.toggle-trigger.open.text::before {
+	content: '\00D7 \0020 Show less'; /* Multiply Space Show less */
+}
+
+
+/* OWL CAROUSEL --> ../stylesheets/owl.carousel.css  */
+
+
+/* 16:9 PHOTO BANNER */
+.banner {
+	margin: 0 0 1.6rem 0;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.banner img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+.banner > a {
+	color: #fff;
+	text-decoration: none;
+}
+.banner .desc {
+	background-color: #222222;
+	color: white;
+	width: 100%;
+	padding: 10px 14px;
+	font-size: 0.875em;
+}
+.banner h2 {
+	color: #fff;
+	margin: 0;
+}
+.banner h2 span { /* optional &raquo; */
+	font-size: 150%;
+	line-height: 1;
+	display: inline-block;
+}
+.banner a:hover h2 {
+	color: #ffcc33 !important;
+}
+.banner a:hover .desc {
+	background: rgba(0,0,0,0.6);
+}
+.banner .desc p {
+	line-height: 1.5;
+}
+ @media only screen and (min-width: $medium-screen) { /* Target above 768px */
+	 .banner .desc {
+	 position: absolute !important;
+	 bottom: 0;
+	 padding-bottom: 0;
+	 background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+
+/* ================================================= LANDING PAGE BANNERS ================================================= */
+
+@import "calvin-landing-page";
+/* CC - Content Pulls */
+
+.cc-contentpull {
+}
+.cc-contentpull-headline {
+	font-weight: bold;
+	font-size: emCalc(27px);
+	line-height: 1.4;
+	margin-bottom: 0;
+}
+.cc-contentpull-subheadline {
+ color: lighten($black, 50%);
+}
+.cc-contentpull-list {
+	list-style: none !important;
+	margin-left: 0;
+	margin-bottom: 1em;
+}
+.cc-contentpull-list b {
+ color: lighten($black, 50%);
+}
+
+
+/* CC - Quick Facts */
+
+.cc-quickfacts {
+}
+.cc-quickfact-headline {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1;
+}
+.cc-quickfact-subheadline {
+ color: lighten($black, 50%);
+	font-size: .8125em;
+}
+ @media only screen and (min-width: $medium-screen) { /* Target above 768px */
+	 .cc-quickfact-headline {
+	 font-size: 2em;
+	}
+	 .cc-quickfact-subheadline {
+	 font-size: 1em;
+	}
+}
+@media only screen and (min-width: $large-screen) { /* Target above 1200px */
+	 .cc-quickfact-headline {
+	 font-size: 3em;
+	}
+}
+
+
+/* CC - Quick Facts on Homepage & Landing pages */
+#homepage .cc-quickfact-headline a {
+	color: #111;
+	display: block;
+	margin-bottom: .25em;
+}
+#homepage .cc-quickfact-headline a:hover {
+	color: #28E4FF;
+}
+
+
+/* CC - People Quote */
+.cc-people-quote {
+	font-weight: bold;
+	position: relative;
+}
+.cc-people-quote blockquote {
+ color: $black;
+	font-size: 1.25rem;
+	border: none;
+}
+@media only screen and (min-width: $medium-screen) { /* Target above 768px */
+	.cc-people-quote blockquote {
+	margin-left: 4em;
+	}
+	 .cc-people-quote-icon { /* Remove opening quote puncuation and set-up background shape */
+	 display: block;
+	 text-indent: -9999px;
+	 height: 50px;
+	 width: 50px;
+	 margin-left: 1em;
+	 position: absolute;
+	 left: 0;
+	 background: $green;
+	 -webkit-transform: skewX(25deg); /* Skew */
+	 -moz-transform: skewX(25deg);
+	 -ms-transform: skewX(25deg);
+	 -o-transform: skewX(25deg);
+	 transform: skewX(25deg);
+	}
+	 .cc-people-quote-icon:after {
+	 display: inline-block;
+	 text-indent: 0;
+	 content: "\201C \0020"; /* Left curly quote + space */
+	 position: absolute;
+	 top: 10px;
+	 left: 8px;
+	 line-height: 60px;
+	 font-size: 60px;
+	 color: $white;
+	 color: rgba(255,255,255,.75);
+	 -webkit-transform: skewX(-25deg); /* Cancel out the previous skew */
+	 -moz-transform: skewX(-25deg);
+	 -ms-transform: skewX(-25deg);
+	 -o-transform: skewX(-25deg);
+	 transform: skewX(-25deg);
+	}
+}
+
+
+/* CC - Events */
+ul.events {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li.event {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 1em;
+}
+.events a {
+	text-decoration: none;
+}
+.events .date {
+	display: block;
+	height: 52px;
+	width: 58px;
+	background: url("//calvin.edu/global/images/icons/date.png") no-repeat 0 0; /* Calendar icon */
+	line-height: normal;
+	padding: 0 .5em 0 0;
+	margin: 0;
+	float: left;
+}
+.events .date.all {
+	background: url("//calvin.edu/global/images/icons/dates.png") no-repeat 0 0;
+}
+.events .date .month {
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+.events .date .day {
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+/* Calendar item */
+.event-item {
+	float: right;
+	display: block;
+	width: 100%;
+	margin-left: -60px;
+	padding-left: 60px;
+}
+.summary, .time {
+	display: block;
+	line-height: 1.25;
+}
+
+
+/* CLEARING - PHOTO GALLERY */
+.clearing-thumbs li {
+	padding-bottom: .7em;
+}
+.clearing-assembled a > img, .clearing-thumbs a > img {
+ outline: 1px solid $link;
+}
+
+
+/* LAZYLOAD YOUTUBE JQUERY PLUGIN */
+.js-lazyYT {
+	opacity: .95;
+}
+.js-lazyYT:hover {
+	opacity: 1;
+}
+.js-lazyYT p {
+	text-shadow: 0 1px 1px rgba(0,0,0,.7);
+}
+.js-lazyYT:hover p {
+	text-decoration: underline;
+}
+
+
+/* TABLESORT JS PLUGIN - https://github.com/tristen/tablesort */
+th.sort-header::-moz-selection {
+	background:transparent;
+}
+th.sort-header::selection {
+	background: transparent;
+}
+th.sort-header {
+	cursor: pointer;
+}
+th.sort-header::-moz-selection, th.sort-header::selection {
+	background:transparent;
+}
+table th.sort-header:after { /* Up & down arrow */
+	content: '';
+	float: right;
+	margin-top: 7px;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: #999999 transparent;
+	visibility: hidden;
+}
+table th.sort-header:hover:after {
+	visibility: visible;
+}
+table th.sort-up:after, table th.sort-down:after, table th.sort-down:hover:after {
+	visibility: visible;
+	opacity: 0.4;
+}
+table th.sort-up:after {
+	border-bottom: none;
+	border-width: 4px 4px 0;
+}
+
+
+/* AUTOCOMPLETE SEARCH BOX FOR CALENDAR AND EVENTS LISTING */
+.autocomplete-suggestions {
+	border: 1px solid #999;
+	background: #fff;
+	cursor: default;
+	overflow: auto;
+}
+.autocomplete-suggestion {
+	padding: 10px 5px;
+	font-size: 0.9em;
+	font-family: inherit;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.autocomplete-selected {
+	background: #f0f0f0;
+}
+.autocomplete-suggestions strong {
+	font-weight: normal;
+	color: #3399ff;
+}
+#searchfield form .biginput {
+	width: 600px;
+	height: 40px;
+	padding: 0 10px 0 10px;
+	background-color: #fff;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	color: #aeaeae;
+	font-weight: normal;
+	font-size: 1em;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+#searchfield form .biginput:focus {
+	color: #858585;
+}
+
+
+/* ADVANCED SEARCH BOX (FOR EVENT PULLS) WITH DATE RANGE AND LOCATION */
+.advanced-search-box {
+	margin-bottom: 2em;
+}
+.advanced-search-box .accordion {
+	border: none;
+	padding: 0;
+}
+.advanced-search-box .accordion-navigation a:link, 
+.advanced-search-box .accordion-navigation a:visited, 
+.advanced-search-box .accordion-navigation a:hover, 
+.advanced-search-box .accordion-navigation a:active {
+	background-color: transparent;
+}
+#advanced-search-toggle {
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+.advanced-search-box .accordion-navigation a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	text-align: right;
+	margin-top: -1.3em;
+}
+.advanced-search-box h4 {
+	margin-top: 0;
+}
+.advanced-search-box .button {
+	margin-bottom: 0;
+}
+
+
+/* OLARK FEEDBACK WIDGET */
+#habla_name_input, #habla_offline_email_input, #habla_offline_phone_input {
+	min-height: 20px;
+	margin: 2px;
+}
+
+/*  dotCMS UI - Edit button */
+.dotContentletControls {
+	z-index: 9999 !important;
+}
+
+/* ====================================================== NEWS & STORIES ====================================================== */
+@import "calvin-news-and-stories";
+
+/* ================================================= SIGHTS & SOUNDS + FOOTER ================================================= */
+@import "calvin-footer";
